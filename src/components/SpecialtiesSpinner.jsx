@@ -19,7 +19,6 @@ export default function SpecialtiesSpinner() {
     return () => clearInterval(interval);
   }, [isPaused, length]);
 
-  // 2. Manual Mobile Swiping Handlers
   const handleTouchStart = (e) => setTouchStartX(e.targetTouches[0].clientX);
   const handleTouchMove = (e) => setTouchEndX(e.targetTouches[0].clientX);
   const handleTouchEnd = () => {
