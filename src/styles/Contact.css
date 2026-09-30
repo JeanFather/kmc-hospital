@@ -106,3 +106,8 @@ textarea{
   cursor: pointer;
   margin-top: 16px;
 }
+@media (min-width: 768px) {
+  .contact-page{
+    min-width: 800px;
+  }
+}
