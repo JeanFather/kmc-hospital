@@ -7,7 +7,6 @@ export default function About() {
   return (
     <>
       <div className="about-page">
-{/* === HEADER SECTION === */}
         <section className="about-header-section">
           <h4 className="about-accent">About KMC Hospital</h4>
           <h1 className="about-main-title">Our Proven Track Record</h1>
@@ -19,7 +18,6 @@ export default function About() {
             Located in the heart of Phase 4, Kubwa, KMC Hospital is dedicated to providing world-class, accessible healthcare. Our mission is to combine advanced medical technology with compassionate, patient-first service.
           </p>
           
-          {/* Main Hospital Image */}
           <img 
             src="https://images.unsplash.com/photo-1586773860418-d37222d8fce3?q=80&w=1200&auto=format&fit=crop" 
             alt="KMC Hospital Patient Room" 
@@ -33,7 +31,6 @@ export default function About() {
             From routine check-ups to emergency interventions, our dedicated team works tirelessly to ensure every patient receives the care they deserve.
           </p>
         </section>
-        {/* === STATS GRID SECTION === */}
         <section className="about-grid-section">
           <div className="card-grid">
             {statsData.map((stat) => (
@@ -46,9 +43,7 @@ export default function About() {
           </div>
         </section>
 
-        {/* === FACILITIES SECTION === */}
         <section className="about-facilities-section">
-{/* === FACILITIES SECTION === */}
         
           <h2 className="facilities-title">Our Facilities</h2>
           <p className="about-text">

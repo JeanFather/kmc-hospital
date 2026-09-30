@@ -1,35 +1,34 @@
 /* Mobile-First Layout */
 .about-page {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   padding: 32px 24px 64px 24px;
-  font-family: 'Segoe UI', system-ui, sans-serif;
-  color: #072B54;
+  color: var(--dark-blue);
 }
 
-/* ==================================
-   Header Section 
-   ================================== */
-.about-header-section {
+.about-header-section,
+.about-grid-section,
+.about-facilities-section {
   max-width: 800px;
   margin: 0 auto 48px auto;
 }
 
 .about-accent {
-  color: #7BC043;
-  font-size: 14px;
-  font-weight: 700;
+  color: var(--all-greens);
+  font-size: var(--faq-font);
+  font-weight: var(--semi-bold);
   margin: 0 0 8px 0;
 }
 
-.about-main-title {
-  font-size: 32px;
-  font-weight: 800;
+.about-main-title,
+.facilities-title {
+  font-size: var(--text-xl);
+  font-weight: var(--bold);
   margin: 0 0 24px 0;
   line-height: 1.2;
 }
 
 .about-text {
-  font-size: 16px;
+  font-size: var(--text-base);
   line-height: 1.6;
   margin: 0 0 24px 0;
 }
@@ -37,30 +36,14 @@
 .about-hero-image {
   width: 100%;
   height: auto;
-  border-radius: 12px;
+  border-radius: var(--radius-md);
   margin: 24px 0;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* ==================================
-   Grid System & Cards
-   ================================== */
-.about-grid-section,
-.about-facilities-section {
-  max-width: 1000px;
-  margin: 0 auto 64px auto;
-}
-
-.facilities-title {
-  font-size: 28px;
-  font-weight: 800;
-  margin: 0 0 24px 0;
-}
-
-/* 2x2 Grid on Mobile, 4x1 Grid on Desktop */
 .card-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Two cards side-by-side on mobile */
+  grid-template-columns: 1fr 1fr;
   gap: 16px;
   margin-top: 32px;
 }
@@ -68,83 +51,115 @@
 .info-card {
   background-size: cover;
   background-position: center;
-  border-radius: 12px;
+  border-radius: var(--radius-md);
   padding: 24px 16px;
-  color: #FFFFFF;
+  color: #ffffff;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-height: 200px; /* Ensures all cards match height */
+  min-height: 200px;
 }
 
-/* Specific Card Text Styling */
 .card-large-number {
-  font-size: 36px;
-  font-weight: 900;
+  font-size: var(--text-xl);
+  font-weight: var(--block);
   margin: 0 0 8px 0;
   line-height: 1;
 }
 
 .card-green-title {
-  color: #7BC043;
-  font-size: 14px;
-  font-weight: 700;
+  color: var(--all-greens);
+  font-size: var(--text-sm);
+  font-weight: var(--semi-bold);
   margin: 0 0 12px 0;
 }
 
 .card-green-title.large-title {
-  font-size: 20px;
+  font-size: var(--text-lg);
+  font-weight: var(--block);
   line-height: 1.2;
 }
 
 .card-desc {
-  font-size: 14px;
+  font-size: var(--text-sm);
   line-height: 1.4;
-  margin: 0;
 }
 
-/* ==================================
-   Desktop Scaling
-   ================================== */
 @media (min-width: 768px) {
   .about-page {
     padding: 64px 48px 80px 48px;
   }
-  
+
   .card-grid {
-    /* Changes from 2x2 to a single row of 4 on wide screens */
-    grid-template-columns: repeat(4, 1fr); 
+    grid-template-columns: repeat(4, 1fr);
     gap: 24px;
   }
-  
+
   .info-card {
     padding: 32px 24px;
   }
 }
-/* ==================================
-   Card Background Images (No Inline Styles)
-   ================================== */
-/* Dark Cards (Stats) */
-.dark-card { background-color: #0A58A3; } /* Fallback color */
-.stat-1 { background: linear-gradient(rgba(10, 88, 163, 0.85), rgba(10, 88, 163, 0.9)), url('https://images.unsplash.com/photo-1551076805-e1869033e561?q=80&w=400&auto=format&fit=crop'); }
-.stat-2 { background: linear-gradient(rgba(10, 88, 163, 0.85), rgba(10, 88, 163, 0.9)), url('https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?q=80&w=400&auto=format&fit=crop'); }
-.stat-3 { background: linear-gradient(rgba(10, 88, 163, 0.85), rgba(10, 88, 163, 0.9)), url('https://images.unsplash.com/photo-1581594693702-fbdc51b2763b?q=80&w=400&auto=format&fit=crop'); }
-.stat-4 { background: linear-gradient(rgba(10, 88, 163, 0.85), rgba(10, 88, 163, 0.9)), url('https://images.unsplash.com/photo-1579684385127-1ef15d508118?q=80&w=400&auto=format&fit=crop'); }
 
-/* Make sure all backgrounds cover the card properly */
-.dark-card.stat-1, .dark-card.stat-2, .dark-card.stat-3, .dark-card.stat-4 {
+.dark-card {
+  background-color: #0a58a3;
+}
+.stat-1 {
+  background:
+    linear-gradient(rgba(10, 88, 163, 0.85), rgba(10, 88, 163, 0.9)),
+    url("https://images.unsplash.com/photo-1551076805-e1869033e561?q=80&w=400&auto=format&fit=crop");
+}
+.stat-2 {
+  background:
+    linear-gradient(rgba(10, 88, 163, 0.85), rgba(10, 88, 163, 0.9)),
+    url("https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?q=80&w=400&auto=format&fit=crop");
+}
+.stat-3 {
+  background:
+    linear-gradient(rgba(10, 88, 163, 0.85), rgba(10, 88, 163, 0.9)),
+    url("https://images.unsplash.com/photo-1581594693702-fbdc51b2763b?q=80&w=400&auto=format&fit=crop");
+}
+.stat-4 {
+  background:
+    linear-gradient(rgba(10, 88, 163, 0.85), rgba(10, 88, 163, 0.9)),
+    url("https://images.unsplash.com/photo-1579684385127-1ef15d508118?q=80&w=400&auto=format&fit=crop");
+}
+
+.dark-card.stat-1,
+.dark-card.stat-2,
+.dark-card.stat-3,
+.dark-card.stat-4 {
   background-size: cover;
   background-position: center;
 }
 
-/* Light Cards (Facilities) */
-.light-card { background-color: #4A90E2; } /* Fallback color */
-.fac-1 { background: linear-gradient(rgba(74, 144, 226, 0.85), rgba(74, 144, 226, 0.9)), url('https://images.unsplash.com/photo-1579154204601-01588f351e67?q=80&w=400&auto=format&fit=crop'); }
-.fac-2 { background: linear-gradient(rgba(74, 144, 226, 0.85), rgba(74, 144, 226, 0.9)), url('https://images.unsplash.com/photo-1587854692152-cbe660dbde88?q=80&w=400&auto=format&fit=crop'); }
-.fac-3 { background: linear-gradient(rgba(74, 144, 226, 0.85), rgba(74, 144, 226, 0.9)), url('https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?q=80&w=400&auto=format&fit=crop'); }
-.fac-4 { background: linear-gradient(rgba(74, 144, 226, 0.85), rgba(74, 144, 226, 0.9)), url('https://images.unsplash.com/photo-1513224502586-d1e602410265?q=80&w=400&auto=format&fit=crop'); }
+.light-card {
+  background-color: #4a90e2;
+}
+.fac-1 {
+  background:
+    linear-gradient(rgba(74, 144, 226, 0.85), rgba(74, 144, 226, 0.9)),
+    url("https://images.unsplash.com/photo-1579154204601-01588f351e67?q=80&w=400&auto=format&fit=crop");
+}
+.fac-2 {
+  background:
+    linear-gradient(rgba(74, 144, 226, 0.85), rgba(74, 144, 226, 0.9)),
+    url("https://images.unsplash.com/photo-1587854692152-cbe660dbde88?q=80&w=400&auto=format&fit=crop");
+}
+.fac-3 {
+  background:
+    linear-gradient(rgba(74, 144, 226, 0.85), rgba(74, 144, 226, 0.9)),
+    url("https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?q=80&w=400&auto=format&fit=crop");
+}
+.fac-4 {
+  background:
+    linear-gradient(rgba(74, 144, 226, 0.85), rgba(74, 144, 226, 0.9)),
+    url("https://images.unsplash.com/photo-1513224502586-d1e602410265?q=80&w=400&auto=format&fit=crop");
+}
 
-.light-card.fac-1, .light-card.fac-2, .light-card.fac-3, .light-card.fac-4 {
+.light-card.fac-1,
+.light-card.fac-2,
+.light-card.fac-3,
+.light-card.fac-4 {
   background-size: cover;
   background-position: center;
 }

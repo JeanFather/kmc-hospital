@@ -1,7 +1,7 @@
-import { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import { departmentData } from '../data/departments';
-import '../styles/SpecialtiesSpinner.css';
+import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import { departmentData } from "../data/departments";
+import "../styles/SpecialtiesSpinner.css";
 
 export default function SpecialtiesSpinner() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -27,32 +27,33 @@ export default function SpecialtiesSpinner() {
     const swipeThreshold = 50;
 
     if (distance > swipeThreshold) {
-      // Swiped Left
       setActiveIndex((prev) => (prev + 1) % length);
     }
     if (distance < -swipeThreshold) {
-      // Swiped Right
       setActiveIndex((prev) => (prev === 0 ? length - 1 : prev - 1));
     }
     setTouchStartX(0);
     setTouchEndX(0);
   };
 
-  // 3. Desktop Navigation
   const nextSlide = () => setActiveIndex((prev) => (prev + 1) % length);
-  const prevSlide = () => setActiveIndex((prev) => (prev === 0 ? length - 1 : prev - 1));
+  const prevSlide = () =>
+    setActiveIndex((prev) => (prev === 0 ? length - 1 : prev - 1));
 
   return (
     <section className="specialties-section">
       <div className="specialties-header">
         <h4 className="specialties-accent">Specialties</h4>
-        <h2 className="specialties-title">Specialties Offered at KMC Hospital</h2>
+        <h2 className="specialties-title">
+          Specialties Offered at KMC Hospital
+        </h2>
         <p className="specialties-desc">
-          We offer comprehensive multi-specialty care, with teams of board-certified specialists and state-of-the-art facilities.
+          We offer comprehensive multi-specialty care, with teams of
+          board-certified specialists and state-of-the-art facilities.
         </p>
       </div>
 
-      <div 
+      <div
         className="carousel-view-window"
         onMouseEnter={() => setIsPaused(true)}
         onMouseLeave={() => setIsPaused(false)}
@@ -60,29 +61,32 @@ export default function SpecialtiesSpinner() {
         onTouchMove={handleTouchMove}
         onTouchEnd={handleTouchEnd}
       >
-        {/* Manual Nav Buttons */}
-        <button className="nav-btn prev-btn" onClick={prevSlide}>&#10094;</button>
-        
+        <button className="nav-btn prev-btn" onClick={prevSlide}>
+          &#10094;
+        </button>
+
         <div className="spinner-container">
           {departmentData.map((dept, index) => {
-            // Infinite Loop Magic: Calculates distance from the active card
             let offset = (index - activeIndex) % length;
-            
-            // Wraps the cards smoothly around the back so there is no snap
+
             if (offset < -Math.floor(length / 2)) offset += length;
             if (offset > Math.floor(length / 2)) offset -= length;
 
-            // Generate a clean class name (e.g., 'offset-1', 'offset--1')
             const positionClass = `offset-${offset}`;
-            const activeClass = offset === 0 ? 'active' : '';
+            const activeClass = offset === 0 ? "active" : "";
 
             return (
-              <div 
-                className={`spinner-card ${positionClass} ${activeClass}`} 
+              <div
+                className={`spinner-card ${positionClass} ${activeClass}`}
                 key={dept.id}
-                onClick={() => setActiveIndex(index)} // Clicking a side card centers it
+                onClick={() => setActiveIndex(index)} 
               >
-                <img src={dept.image} alt={dept.title} className="spinner-img" loading="lazy" />
+                <img
+                  src={dept.image}
+                  alt={dept.title}
+                  className="spinner-img"
+                  loading="lazy"
+                />
                 <div className="spinner-text-area">
                   <h3 className="spinner-card-title">{dept.title}</h3>
                   <p className="spinner-card-desc">{dept.description}</p>
@@ -92,7 +96,9 @@ export default function SpecialtiesSpinner() {
           })}
         </div>
 
-        <button className="nav-btn next-btn" onClick={nextSlide}>&#10095;</button>
+        <button className="nav-btn next-btn" onClick={nextSlide}>
+          &#10095;
+        </button>
       </div>
 
       <div className="specialties-actions">

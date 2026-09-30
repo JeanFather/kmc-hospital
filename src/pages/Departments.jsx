@@ -6,7 +6,6 @@ export default function Departments() {
   return (
     <>
       <div className="departments-page">
-        {/* Page Header matching the Figma design */}
         <div className="departments-header">
           <h1 className="departments-title">All Medical Departments</h1>
           <p className="departments-intro">
@@ -17,7 +16,6 @@ export default function Departments() {
           </p>
         </div>
 
-        {/* The .map() function dynamically rendering the cards */}
         <div className="departments-grid">
           {departmentData.map((dept) => (
             <div className="dept-card" key={dept.id}>

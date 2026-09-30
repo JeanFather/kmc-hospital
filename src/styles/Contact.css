@@ -1,16 +1,15 @@
-/* Typography & Spacing */
 .contact-header {
   margin-bottom: 24px;
 }
 
 .page-title {
-  color: #0A58A3; /* Dark blue from your Navbar */
+  color: #0A58A3;
   font-size: 24px;
   margin-bottom: 4px;
 }
 
 .accent-subtitle {
-  color: #7BC043; /* Green accent color */
+  color: #7BC043; 
   font-size: 14px;
   margin-top: 0;
   margin-bottom: 16px;
@@ -23,20 +22,19 @@
   margin: 4px 0;
 }
 
-/* Map Container Styling */
 .map-container {
   width: 100%;
-  height: 250px; /* Matches the height of your placeholder */
+  height: 250px;
   margin-bottom: 32px;
   border-radius: 4px;
-  overflow: hidden; /* Ensures the iframe doesn't poke out of the rounded corners */
+  overflow: hidden; 
   background-color: #EBEBEB;
 }
 
 .google-map {
   width: 100%;
   height: 100%;
-  border: none; /* Replaces the inline style requirement */
+  border: none; 
 }
 
 .contact-page {
