@@ -1,0 +1,86 @@
+/* Mobile-First Layout */
+.departments-page {
+  background-color: #EBEBEB; /* Light gray page background from Figma */
+  padding: 32px 24px;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+.departments-header {
+  margin-bottom: 32px;
+  max-width: 800px;
+}
+
+.departments-title {
+  color: #0A58A3; /* Dark blue */
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.departments-intro {
+  color: #0A58A3;
+  font-size: 15px;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+/* Card Grid Layout */
+.departments-grid {
+  display: flex;
+  flex-direction: column; /* Mobile stacking */
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Individual Card Styling */
+.dept-card {
+  background-color: #F8F8F8; /* Lighter background for the card */
+  border: 1px solid rgba(0, 0, 0, 0.05); /* Subtle border */
+  border-radius: 12px;
+  padding: 24px;
+  text-align: center;
+}
+
+.dept-img {
+  width: 100%;
+  height: 200px; /* Fixed height to keep cards uniform */
+  object-fit: cover; /* Prevents image distortion */
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.dept-card-title {
+  color: #0A58A3;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.dept-card-desc {
+  color: #0A58A3;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Desktop Scaling */
+@media (min-width: 768px) {
+  .departments-page {
+    padding: 64px 48px;
+  }
+  
+  .departments-header {
+    margin: 0 auto 48px auto;
+    text-align: center;
+  }
+
+  .departments-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Fluid grid for desktop */
+    gap: 32px;
+  }
+}

@@ -1,0 +1,82 @@
+.cta-section {
+  background:
+    linear-gradient(var(--picture-tint), var(--picture-tint)),
+    url("../assets/site-images/kmc-records.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 40px 24px;
+  color: #ffffff;
+}
+.cta-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+.cta-title {
+  font-size: var(--section-heading);
+  font-weight: var(--semi-bold);
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.cta-subtitle {
+  font-size: var(--text-base);
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+.cta-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.cta-btn {
+  display: block;
+  text-align: center;
+  padding: 14px;
+  border-radius: var(--radius-sm);
+  font-weight: bold;
+  font-size: var(--text-base);
+  text-decoration: none;
+  transition: var(--transition-fast);
+}
+
+.cta-btn:hover {
+  background-color: hsl(260 25% 95% / 30%);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: var(--card-shadow);
+}
+
+.btn-primary {
+  background-color: var(--dark-blue);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.btn-whatsapp {
+  background-color: var(--all-greens);
+  color: var(--text-blue);
+}
+
+@media (min-width: 768px) {
+  .cta-section {
+    padding: 64px 48px;
+  }
+  .cta-title {
+    font-size: var(--text-xl);
+  }
+  .cta-subtitle {
+    font-size: var(--hero-text);
+  }
+  .cta-buttons {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .cta-btn {
+    min-width: 300px;
+  }
+}

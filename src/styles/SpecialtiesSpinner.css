@@ -1,0 +1,226 @@
+.specialties-section {
+  background-color: var(--bg-light-gray);
+  padding: 48px 0;
+  text-align: center;
+}
+
+.specialties-header {
+  padding: 0 24px;
+  margin-bottom: 32px;
+}
+
+.specialties-accent {
+  color: var(--all-greens);
+  font-size: var(--text-sm);
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0 0 8px 0;
+}
+
+.specialties-title {
+  color: var(--text-blue);
+  font-size: 24px;
+  font-weight: var(--semi-bold);
+  margin: 0 0 16px 0;
+  line-height: 1.2;
+}
+
+.specialties-desc {
+  color: #0a58a3;
+  font-size: 15px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.spinner-card-title {
+  color: #0a58a3;
+  font-size: 18px;
+  margin: 0 0 8px 0;
+}
+
+.spinner-card-desc {
+  color: #0a58a3;
+  font-size: 14px;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.specialties-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 0 24px;
+  margin-top: 16px;
+}
+
+.btn-book-consultation {
+  display: block;
+  width: 100%;
+  max-width: 350px;
+  background-color: #1a4474;
+  color: #ffffff;
+  padding: 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.link-view-all {
+  color: #0a58a3;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 16px;
+}
+/* Container holding the entire interactive area */
+.carousel-view-window {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 40px auto;
+  overflow: hidden; /* Hides cards sliding out the sides */
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* The absolute positioning stage */
+.spinner-container {
+  position: relative;
+  width: 100%;
+  height: 480px; /* Locked height so absolute children don't collapse */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Base Card - Fixes Desktop Stretching */
+.spinner-card {
+  position: absolute;
+  width: 90%;
+  max-width: 350px; /* FIX: Prevents stretching on ultrawide monitors */
+  height: 100%;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  pointer-events: none; /* Can't click invisible cards */
+}
+
+.spinner-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.spinner-text-area {
+  padding: 24px;
+  text-align: center;
+}
+
+/* =========================================
+   Zero-Inline Positioning System
+   ========================================= */
+
+/* Center (Active) Card */
+.offset-0 {
+  transform: translateX(0) scale(1);
+  opacity: 1;
+  z-index: 10;
+  pointer-events: auto;
+  box-shadow: 0 15px 35px rgba(10, 88, 163, 0.15); /* Soft blue glow */
+}
+
+/* 1 Position Right */
+.offset-1 {
+  transform: translateX(110%) scale(0.85);
+  opacity: 0.5;
+  z-index: 5;
+  pointer-events: auto; /* Allow clicking to navigate */
+}
+
+/* 1 Position Left */
+.offset--1 {
+  transform: translateX(-110%) scale(0.85);
+  opacity: 0.5;
+  z-index: 5;
+  pointer-events: auto;
+}
+
+/* 2+ Positions Out (Hidden in the background) */
+.offset-2,
+.offset-3,
+.offset-4,
+.offset-5 {
+  transform: translateX(220%) scale(0.7);
+  opacity: 0;
+  z-index: 1;
+}
+
+.offset--2,
+.offset--3,
+.offset--4,
+.offset--5 {
+  transform: translateX(-220%) scale(0.7);
+  opacity: 0;
+  z-index: 1;
+}
+
+/* =========================================
+   Navigation Buttons
+   ========================================= */
+.nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(10, 88, 163, 0.9);
+  color: #ffffff;
+  border: none;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 20;
+  transition: background 0.3s ease;
+  display: none; /* Hide on mobile to prioritize touch swiping */
+}
+
+.nav-btn:hover {
+  background: #7bc043;
+}
+
+.prev-btn {
+  left: 16px;
+}
+.next-btn {
+  right: 16px;
+}
+
+/* Desktop Scaling */
+@media (min-width: 768px) {
+  .nav-btn {
+    display: block; /* Show buttons on desktop */
+  }
+
+  .prev-btn {
+    left: 40px;
+  }
+  .next-btn {
+    right: 40px;
+  }
+
+  /* Spread cards further apart on large screens */
+  .offset-1 {
+    transform: translateX(130%) scale(0.85);
+  }
+  .offset--1 {
+    transform: translateX(-130%) scale(0.85);
+  }
+}

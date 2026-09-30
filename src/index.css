@@ -1,0 +1,71 @@
+@import url("@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  background-color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  /* Brand Colors */
+  --dark-blue: #00205b; /* Navbar, Footer, 'Book a Consultation' buttons */
+  --all-greens: #7ed957; /* WhatsApp button, Service Chips, FAQ Icons */
+
+  /* Neutral Backgrounds */
+  --picture-tint: #007bffb6; /* Main page backgrounds */
+  --bg-light-gray: #d5d5d5; /* Contact form background, Map placeholder, use this or d9d9d9 */
+  --bg-chip-gray: #717171; /* Inactive/Default chips in the form */
+
+  /* Typography  */
+  --text-blue: #002b5c; /* Main headings, Page titles */
+  --text-xs: 13px; /* Facility descriptions, small footer text */
+  --text-sm: 14px; /* Subtext, form placeholders */
+  --faq-font: 15px; /* faq answers*/
+  --text-base: 16px; /* Standard paragraph text, button text */
+  --text-lg: 20px; /* Subheadings, CTA prompts */
+  --text-xl: 32px; /* Section headers (e.g., "Our Facilities") */
+  --section-heading: 24px; /* Main page headers (e.g., "All Medical Departments") */
+  --hero-heading: 28px;
+  --hero-text: 18px;
+  --font-inter: "Inter", sans-serif;
+  /* Typography: Font Weights */
+  --regular: 400; /* Standard text */
+  --semi-bold: 700; /* Main headers, important numbers */
+  --bold: 800;
+  --block: 900;
+
+  /* UI Element Styling */
+  --radius-sm: 4px; /* Checkboxes, small UI elements */
+  --radius-md: 8px; /* Department cards, Input fields */
+  --radius-pill: 20px; /* Rounded 'service' chips */
+
+  /* Transitions (For smooth React interactivity) */
+  --transition-fast: all 0.2s ease; /* Button hovers, chip clicks */
+  --transition-med: all 0.3s ease-in-out; /* FAQ accordion expanding, Menu sliding open */
+
+  --card-shadow:
+    0 0 0.5rem 2px hsl(var(--base-hue) 25% 25% / 35%),
+    inset 0 0 0.1rem hsl(var(--base-hue) 75% 40% / 20%),
+    inset 0 0 0.2rem 0.1rem hsl(var(--base-hue) 75% 40% / 15%),
+    inset 0 0 0.3rem 0.2rem hsl(var(--base-hue) 75% 40% / 10%);
+}
+/* Glassmorphism Utility Class */
+.glass-panel {
+  background-color: hsl(260 25% 95% / 30%);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: var(--card-shadow);
+}
+
+.main-content {
+  margin: 0 auto;
+  max-width: 100%;
+}

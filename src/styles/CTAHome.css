@@ -1,0 +1,83 @@
+.cta-home {
+  background:
+    linear-gradient(var(--picture-tint), var(--picture-tint)),
+    url("../assets/site-images/kmc-entrance.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 48px 24px;
+  color: #ffffff;
+}
+
+.cta-home-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.cta-home-accent {
+  color: var(--all-greens);
+  font-size: var(--text-sm);
+  font-weight: var(--semi-bold);
+  font-family: var(--font-inter);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin: 0 0 12px 0;
+}
+
+.cta-home-title {
+  font-size: var(--section-heading);
+  font-weight: var(--semi-bold);
+  line-height: 1.2;
+  margin: 0 0 16px 0;
+}
+
+.cta-home-desc {
+  font-size: var(--text-base);
+  line-height: 1.5;
+  margin: 0 0 32px 0;
+  opacity: 0.95;
+  max-width: 600px;
+}
+
+.cta-home-actions {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn-cta-home {
+  display: inline-block;
+  text-align: center;
+  background-color: var(--all-greens);
+  color: #ffffff;
+  padding: 14px 32px;
+  border-radius: var(--radius-sm);
+  font-weight: bold;
+  font-size: var(--text-base);
+  text-decoration: none;
+  transition: var(--transition-fast);
+  width: fit-content;
+}
+
+.btn-cta-home:hover {
+  background-color: hsl(260 25% 95% / 30%);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: var(--card-shadow);
+}
+
+@media (min-width: 768px) {
+  .cta-home {
+    padding: 80px 48px;
+    background:
+      linear-gradient(var(--picture-tint), var(--picture-tint)),
+      url("../assets/site-images/kmc-exterior.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  .cta-home-desc {
+    font-size: var(--hero-text);
+  }
+  .cta-home-title {
+    font-size: var(--text-xl);
+  }
+}

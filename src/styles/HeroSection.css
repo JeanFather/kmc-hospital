@@ -1,0 +1,87 @@
+.hero-section {
+  background:
+    linear-gradient(var(--picture-tint), var(--picture-tint)),
+    url("../assets/site-images/kmc-sign.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 100px 24px;
+  color: #ffffff;
+}
+.hero-title {
+  font-size: var(--hero-heading);
+  font-weight: var(--bold);
+  line-height: 1.2;
+  margin: 0 0 16px 0;
+}
+
+.hero-subtitle {
+  font-size: var(--hero-text);
+  line-height: 1.4;
+  margin: 0 0 16px 0;
+}
+
+.hero-description {
+  font-size: var(--hero-text);
+  line-height: 1.5;
+  margin: 0 0 32px 0;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.btn-hero {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 14px;
+  border-radius: var(--radius-sm);
+  font-weight: bold;
+  font-size: var(--text-base);
+  text-decoration: none;
+  transition: var(--transition-fast);
+}
+
+.btn-hero:hover {
+  background-color: hsl(260 25% 95% / 30%);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: var(--card-shadow);
+}
+
+.btn-hero-primary {
+  background-color: var(--dark-blue);
+  color: #ffffff;
+}
+
+.btn-hero-whatsapp {
+  background-color: var(--all-greens);
+  color: var(--dark-blue); 
+}
+
+@media (min-width: 768px) {
+  .hero-section {
+    padding: 155px 48px;
+    background:
+      linear-gradient(var(--picture-tint), var(--picture-tint)),
+      url("../assets/site-images/kmc-entrance.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .hero-content {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .hero-buttons {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .btn-hero {
+    max-width: 300px;
+  }
+}
