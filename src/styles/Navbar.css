@@ -1,7 +1,7 @@
 .global-header {
   background-color: var(--dark-blue);
   border-bottom: 1px solid var(--all-greens);
-  padding: 16px 24px;
+  padding: 16px 24px 16px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -20,7 +20,7 @@
 
 .brand-text {
   color: #ffffff;
-  font-weight: bold;
+  font-weight: var(--semi-bold);
   font-size: var(--text-sm);
   line-height: 1.5;
   letter-spacing: 0.5px;
@@ -48,7 +48,7 @@
   display: none;
   position: absolute;
   top: 100%;
-  left: 0;
+  left: 0; 
   width: 100%;
   background-color: var(--dark-blue);
   padding: 16px 24px 24px 24px;
@@ -79,7 +79,9 @@
   .hamburger-btn {
     display: none;
   }
-
+.brand-text{
+  font-size: var(--text-lg);
+}
   .navbar {
     display: block !important;
     position: static;
