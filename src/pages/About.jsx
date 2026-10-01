@@ -2,6 +2,8 @@ import CTASection from "../components/CTASection";
 import "../styles/About.css";
 import { facilitiesData } from "../data/facilities.js";
 import { statsData } from "../data/aboutstats.js";
+import familyPlanning from "../assets/site-images/kmc-waitarea.jpg";
+
 
 export default function About() {
   return (
@@ -19,7 +21,7 @@ export default function About() {
           </p>
           
           <img 
-            src="https://images.unsplash.com/photo-1586773860418-d37222d8fce3?q=80&w=1200&auto=format&fit=crop" 
+            src={familyPlanning}
             alt="KMC Hospital Patient Room" 
             className="about-hero-image"
           />

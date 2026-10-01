@@ -1,8 +1,7 @@
-/* Mobile-First Layout */
 .about-page {
   background-color: #ffffff;
   padding: 32px 24px 64px 24px;
-  color: var(--dark-blue);
+  color: var(--text-blue);
 }
 
 .about-header-section,
@@ -35,7 +34,11 @@
 
 .about-hero-image {
   width: 100%;
-  height: auto;
+  height: 65vh;
+  min-height: 250px;
+  max-height: 400px;
+  object-fit: cover;
+  object-position: center;
   border-radius: var(--radius-md);
   margin: 24px 0;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -69,7 +72,7 @@
 
 .card-green-title {
   color: var(--all-greens);
-  font-size: var(--text-sm);
+  font-size: var(--text-base);
   font-weight: var(--semi-bold);
   margin: 0 0 12px 0;
 }
@@ -100,66 +103,56 @@
   }
 }
 
-.dark-card {
-  background-color: #0a58a3;
-}
 .stat-1 {
   background:
-    linear-gradient(rgba(10, 88, 163, 0.85), rgba(10, 88, 163, 0.9)),
-    url("https://images.unsplash.com/photo-1551076805-e1869033e561?q=80&w=400&auto=format&fit=crop");
+    linear-gradient(var(--about-tint), var(--about-tint)),
+    url("../assets/site-images/kmc-records.jpg");
 }
 .stat-2 {
   background:
-    linear-gradient(rgba(10, 88, 163, 0.85), rgba(10, 88, 163, 0.9)),
-    url("https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?q=80&w=400&auto=format&fit=crop");
+    linear-gradient(var(--about-tint), var(--about-tint)),
+    url("../assets/site-images/kmc-records.jpg");
 }
 .stat-3 {
   background:
-    linear-gradient(rgba(10, 88, 163, 0.85), rgba(10, 88, 163, 0.9)),
-    url("https://images.unsplash.com/photo-1581594693702-fbdc51b2763b?q=80&w=400&auto=format&fit=crop");
+    linear-gradient(var(--about-tint), var(--about-tint)),
+    url("../assets/site-images/kmc-records.jpg");
 }
 .stat-4 {
   background:
-    linear-gradient(rgba(10, 88, 163, 0.85), rgba(10, 88, 163, 0.9)),
-    url("https://images.unsplash.com/photo-1579684385127-1ef15d508118?q=80&w=400&auto=format&fit=crop");
+    linear-gradient(var(--about-tint), var(--about-tint)),
+    url("../assets/site-images/kmc-records.jpg");
 }
 
-.dark-card.stat-1,
-.dark-card.stat-2,
-.dark-card.stat-3,
-.dark-card.stat-4 {
-  background-size: cover;
-  background-position: center;
-}
-
-.light-card {
-  background-color: #4a90e2;
-}
 .fac-1 {
   background:
-    linear-gradient(rgba(74, 144, 226, 0.85), rgba(74, 144, 226, 0.9)),
-    url("https://images.unsplash.com/photo-1579154204601-01588f351e67?q=80&w=400&auto=format&fit=crop");
+    linear-gradient(var(--about-tint), var(--about-tint)),
+    url("../assets/site-images/kmc-records.jpg");
 }
 .fac-2 {
   background:
-    linear-gradient(rgba(74, 144, 226, 0.85), rgba(74, 144, 226, 0.9)),
-    url("https://images.unsplash.com/photo-1587854692152-cbe660dbde88?q=80&w=400&auto=format&fit=crop");
+    linear-gradient(var(--about-tint), var(--about-tint)),
+    url("../assets/site-images/kmc-pharmacy.jpg");
 }
 .fac-3 {
   background:
-    linear-gradient(rgba(74, 144, 226, 0.85), rgba(74, 144, 226, 0.9)),
-    url("https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?q=80&w=400&auto=format&fit=crop");
+    linear-gradient(var(--about-tint), var(--about-tint)),
+    url("../assets/site-images/kmc-ambulance.png");
 }
 .fac-4 {
   background:
-    linear-gradient(rgba(74, 144, 226, 0.85), rgba(74, 144, 226, 0.9)),
-    url("https://images.unsplash.com/photo-1513224502586-d1e602410265?q=80&w=400&auto=format&fit=crop");
+    linear-gradient(var(--about-tint), var(--about-tint)),
+    url("../assets/site-images/postnatal-ward.jpg");
 }
 
 .light-card.fac-1,
 .light-card.fac-2,
 .light-card.fac-3,
-.light-card.fac-4 {
+.light-card.fac-4,
+.dark-card.stat-1,
+.dark-card.stat-2,
+.dark-card.stat-3,
+.dark-card.stat-4 {
   background-size: cover;
   background-position: center;
 }
