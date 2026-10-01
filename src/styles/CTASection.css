@@ -57,8 +57,8 @@
 }
 
 .btn-whatsapp {
-  background-color: var(--all-greens);
-  color: var(--text-blue);
+  background-color: #25D366;
+  color: #ffffff;
 }
 
 @media (min-width: 768px) {

@@ -16,16 +16,16 @@ body {
 
 :root {
   /* Brand Colors */
-  --dark-blue: #00205b; /* Navbar, Footer, 'Book a Consultation' buttons */
-  --all-greens: #7ed957; /* WhatsApp button, Service Chips, FAQ Icons */
+  --dark-blue: #306064; /* Navbar, Footer, 'Book a Consultation' buttons */
+  --all-greens: #cb4d55; /* WhatsApp button, Service Chips, FAQ Icons */
 
   /* Neutral Backgrounds */
-  --picture-tint: #007bffb6; /* Main page backgrounds */
+  --picture-tint: #008eadb6; /* Main page backgrounds */
   --bg-light-gray: #d5d5d5; /* Contact form background, Map placeholder, use this or d9d9d9 */
   --bg-chip-gray: #717171; /* Inactive/Default chips in the form */
 
   /* Typography  */
-  --text-blue: #002b5c; /* Main headings, Page titles */
+  --text-blue: #284e4b; /* Main headings, Page titles */
   --text-xs: 13px; /* Facility descriptions, small footer text */
   --text-sm: 14px; /* Subtext, form placeholders */
   --faq-font: 15px; /* faq answers*/

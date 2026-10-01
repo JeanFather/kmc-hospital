@@ -1,5 +1,6 @@
 .global-header {
   background-color: var(--dark-blue);
+  border-bottom: 1px solid var(--all-greens);
   padding: 16px 24px;
   display: flex;
   justify-content: space-between; 

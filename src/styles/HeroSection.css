@@ -57,8 +57,8 @@
 }
 
 .btn-hero-whatsapp {
-  background-color: var(--all-greens);
-  color: var(--dark-blue); 
+  background-color: #25d366;
+  color: #ffffff;
 }
 
 @media (min-width: 768px) {

@@ -1,4 +1,6 @@
 import "../styles/Footer.css";
+import mailIcon from '../assets/site-images/mail-pen.svg';
+import phoneIcon from '../assets/site-images/phone-outgoing.svg';
 
 export default function Footer() {
   return (
@@ -57,8 +59,8 @@ export default function Footer() {
         <div className="footer-section">
           <h4 className="footer-heading">Contact Us</h4>
           <div className="footer-contact-info">
-            <p>  <a href="mailto:kmc.hospital@yahoo.com">Email: kmc.hospital@yahoo.com</a></p>
-            <p>Phone: +234 816 414 4914</p>
+            <p>  <a href="mailto:kmc.hospital@yahoo.com"><img src={mailIcon} alt="Email" className="social-icon" /> kmc.hospital@yahoo.com</a></p>
+            <p><a href="tel:+2348164144914"><img src={phoneIcon} alt="Phone-Outgoing" className="social-icon" /> +234 816 414 4914</a></p>
           </div>
         </div>
       </div>

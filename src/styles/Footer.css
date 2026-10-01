@@ -1,5 +1,6 @@
 .global-footer {
-  background-color: var(--dark-blue);
+  background: linear-gradient(var(--dark-blue), #008ead);
+  border-top: 1px solid var(--all-greens);
   color: #ffffff;
   padding: 48px 24px 24px 24px;
 }
@@ -69,10 +70,20 @@
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   text-align: right;
 }
-.footer-contact-info a{
+.footer-contact-info a {
   color: #ffffff;
-  text-decoration: none;
 }
+.social-icon {
+  width: 15px;
+  height: 15px;
+  color: #ffffff;
+  transition: transform 0.2s ease;
+}
+
+.social-icon:hover {
+  transform: translateY(-3px);
+}
+
 .footer-bottom p {
   font-size: var(--text-xs);
   color: rgba(255, 255, 255, 0.6);

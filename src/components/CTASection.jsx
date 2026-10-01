@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import "../styles/CTASection.css";
+import whatsappIcon from '../assets/site-images/whatsapp-logo.svg';
 
 export default function CTASection() {
   return (
