@@ -9,7 +9,10 @@ export default function SpecialtiesSpinner() {
   const [touchStartX, setTouchStartX] = useState(0);
   const [touchEndX, setTouchEndX] = useState(0);
 
-  const length = departmentData.length;
+  const featuredSpecialties = departmentData.filter(
+    (dept) => dept.featured === true,
+  );
+  const length = featuredSpecialties.length;
 
   useEffect(() => {
     if (isPaused) return;
@@ -66,7 +69,7 @@ export default function SpecialtiesSpinner() {
         </button>
 
         <div className="spinner-container">
-          {departmentData.map((dept, index) => {
+          {featuredSpecialties.map((dept, index) => {
             let offset = (index - activeIndex) % length;
 
             if (offset < -Math.floor(length / 2)) offset += length;
@@ -79,7 +82,7 @@ export default function SpecialtiesSpinner() {
               <div
                 className={`spinner-card ${positionClass} ${activeClass}`}
                 key={dept.id}
-                onClick={() => setActiveIndex(index)} 
+                onClick={() => setActiveIndex(index)}
               >
                 <img
                   src={dept.image}

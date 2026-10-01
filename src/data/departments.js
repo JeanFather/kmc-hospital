@@ -1,33 +1,84 @@
-// src/data/departments.js
+import pediatricsImg from "../assets/site-images/kmc-paediatric.jpg";
+import femaleWard from "../assets/site-images/female-ward.jpg";
+import surgeryImg from "../assets/site-images/kmc-oxygen.jpg";
+import maleWard from "../assets/site-images/male-ward.jpg";
+import bedsImg from "../assets/site-images/kmc-beds.jpg";
+import pharmacyImg from "../assets/site-images/kmc-pharmacy.jpg";
+import consultationImg from "../assets/site-images/kmc-consultation.jpg";
+import breastfeeding from "../assets/site-images/breastfeeding.jpg";
+import diagnosisImg from "../assets/site-images/kmc-records.jpg";
+
 export const departmentData = [
   {
     id: 1,
-    title: "Pediatrics",
-    description: "Compassionate medical care tailored to infants, children, and adolescents.",
-    image: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?q=80&w=600&auto=format&fit=crop"
+    title: "Obstetrics & Gynaecology",
+    description:
+      "Comprehensive women's healthcare, covering maternal care, pregnancy management, and reproductive health.",
+    image: femaleWard,
+    featured: true,
   },
   {
     id: 2,
-    title: "Endocrinology",
-    description: "Diagnosis and management of hormone-related and metabolic disorders.",
-    image: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?q=80&w=600&auto=format&fit=crop"
+    title: "Paediatrics",
+    description:
+      "Expert medical care tailored for infants, children, and adolescents to ensure healthy development.",
+    image: pediatricsImg,
+    featured: true,
   },
   {
     id: 3,
-    title: "Gastroenterology",
-    description: "Comprehensive care for digestive and gastrointestinal conditions.",
-    image: "https://images.unsplash.com/photo-1584982751601-97dcc096659c?q=80&w=600&auto=format&fit=crop"
+    title: "General Surgery",
+    description:
+      "Advanced surgical interventions and post-operative care led by our team of experienced consultant surgeons.",
+    image: surgeryImg,
+    featured: true,
   },
   {
     id: 4,
-    title: "Cardiology",
-    description: "Advanced heart care, focusing on the diagnosis and treatment of cardiovascular diseases.",
-    image: "https://images.unsplash.com/photo-1628348068343-c6a848d2b6dd?q=80&w=600&auto=format&fit=crop"
+    title: "Urology",
+    description:
+      "Specialized diagnostics and treatment for conditions affecting the urinary tract and male reproductive system.",
+    image: maleWard,
+    featured: true,
   },
   {
     id: 5,
-    title: "Orthopedics",
-    description: "Specialized treatment for bone, joint, and muscle conditions and injuries.",
-    image: "https://images.unsplash.com/photo-1527613426441-4da17471b66d?q=80&w=600&auto=format&fit=crop"
-  }
+    title: "Internal Medicine",
+    description:
+      "Comprehensive diagnosis, management, and non-surgical treatment of complex adult diseases.",
+    image: bedsImg,
+    featured: true,
+  },
+  {
+    id: 6,
+    title: "24-Hour Pharmacy",
+    description:
+      "Fully stocked pharmacy providing prescription and over-the-counter medications.",
+    image: pharmacyImg,
+    featured: false,
+  },
+  {
+    id: 7,
+    title: "Laboratory & Diagnostics",
+    description:
+      "State-of-the-art testing facility including Ultrasound and ECG services.",
+    image: diagnosisImg,
+    featured: false,
+  },
+  {
+    id: 8,
+    title: "Outpatient Consultation",
+    description:
+      "Expert medical evaluations, routine check-ups, and personalized treatment plans provided by our dedicated general practitioners.",
+    image: consultationImg,
+    featured: false,
+  },
+  {
+    id: 9,
+    title: "Antenatal Care",
+    description:
+      "Comprehensive monitoring and support throughout pregnancy, ensuring the health and well-being of both mother and baby.",
+    image: breastfeeding,
+    featured: false,
+  },
 ];

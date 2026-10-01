@@ -43,9 +43,10 @@
 
 .dept-img {
   width: 100%;
-  height: 200px; 
+  height: 250px; 
   object-fit: cover; 
-  border-radius: 8px;
+  object-position: top;
+  border-radius: var(--radius-md);
   margin-bottom: 16px;
 }
 
