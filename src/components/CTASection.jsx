@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import "../styles/CTASection.css";
-import whatsappIcon from '../assets/site-images/whatsapp-logo.svg';
+import whatsappIcon from "../assets/site-images/whatsapp-logo.svg";
 
 export default function CTASection() {
   return (
@@ -23,7 +23,14 @@ export default function CTASection() {
             rel="noopener noreferrer"
             className="cta-btn btn-whatsapp"
           >
-            WhatsApp Coordinator
+            <div className="whatsapp">
+              <img
+                src={whatsappIcon}
+                alt="WhatsApp"
+                className="whatsapp-icon"
+              />
+              <p>WhatsApp Coordinator</p>
+            </div>
           </a>
         </div>
       </div>

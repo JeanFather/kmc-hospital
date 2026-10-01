@@ -20,12 +20,6 @@
   margin-bottom: 16px;
 }
 
-.footer-logo {
-  width: 40px;
-  height: 40px;
-  background-color: var(--all-greens);
-}
-
 .footer-title {
   font-size: var(--text-base);
   font-weight: bold;
@@ -57,7 +51,13 @@
   font-style: normal;
   opacity: 0.9;
 }
-
+.footer-address a {
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  transition: transform 0.2s ease;
+}
 .footer-hours strong {
   font-weight: var(--semi-bold);
   opacity: 1;
@@ -72,16 +72,20 @@
 }
 .footer-contact-info a {
   color: #ffffff;
-}
-.social-icon {
-  width: 15px;
-  height: 15px;
-  color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 3px;
   transition: transform 0.2s ease;
 }
+.social-icon {
+  width: 20px;
+  height: 20px;
+  color: #ffffff;
+}
 
-.social-icon:hover {
-  transform: translateY(-3px);
+.footer-address a:hover,
+.footer-contact-info a:hover {
+  transform: scale(1.1);
 }
 
 .footer-bottom p {

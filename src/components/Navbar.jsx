@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/Navbar.css';
+import kmcLogo from "../assets/site-images/kmc-custom-logo.png";
+
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -16,9 +18,9 @@ export default function Navbar() {
   return (
     <header className="global-header">
       <Link to="/" className="nav-brand" onClick={closeMenu}>
-        <div className="brand-logo"></div>
+        <div className="brand-logo"><img src={kmcLogo} alt="KMC Logo" className="logo-image" /></div>
         <div className="brand-text">
-          KMC<br />HOSPITAL
+          Kubwa Muslim <br /> Community Hospital
         </div>
       </Link>
       
