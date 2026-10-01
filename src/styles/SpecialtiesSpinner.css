@@ -32,13 +32,13 @@
 }
 
 .spinner-card-title {
-  color: var(--text-blue);
+  color: var(--all-greens);
   font-size: var(--text-lg);
   margin: 0 0 8px 0;
 }
 
 .spinner-card-desc {
-  color: #0a58a3;
+  color: var(--text-blue);
   font-size: var(--text-base);
   line-height: 1.4;
 }
@@ -62,7 +62,7 @@
   border-radius: var(--radius-sm);
   text-decoration: none;
   font-weight: bold;
-  font-size: 16px;
+  font-size: var(--text-base);
   transition: var(--transition-fast);
 }
 .btn-book-consultation:hover {
@@ -78,6 +78,10 @@
   font-weight: bold;
   text-decoration: none;
   font-size: var(--text-base);
+  transition: var(--transition-fast);
+}
+.link-view-all:hover {
+  color: var(--all-greens);
 }
 .carousel-view-window {
   position: relative;

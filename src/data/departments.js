@@ -7,6 +7,9 @@ import pharmacyImg from "../assets/site-images/kmc-pharmacy.jpg";
 import consultationImg from "../assets/site-images/kmc-consultation.jpg";
 import breastfeeding from "../assets/site-images/breastfeeding.jpg";
 import diagnosisImg from "../assets/site-images/kmc-records.jpg";
+import breastBeds from "../assets/site-images/breast-beds.jpg";
+import ambulance from "../assets/site-images/kmc-ambulance.png";
+import familyPlanning from "../assets/site-images/kmc-waitarea.jpg";
 
 export const departmentData = [
   {
@@ -79,6 +82,30 @@ export const departmentData = [
     description:
       "Comprehensive monitoring and support throughout pregnancy, ensuring the health and well-being of both mother and baby.",
     image: breastfeeding,
+    featured: false,
+  },
+  {
+    id: 10,
+    title: "Inpatient Facilities",
+    description:
+      "Comfortable, well-equipped admission wards offering 24-hour nursing care and continuous medical monitoring.",
+    image: breastBeds,
+    featured: false,
+  },
+  {
+    id: 11,
+    title: "Emergency Services",
+    description:
+      "Rapid response emergency care available 24/7, equipped to handle critical medical situations.",
+    image: ambulance,
+    featured: false,
+  },
+  {
+    id: 12,
+    title: "Family Planning",
+    description:
+      "Confidential counseling and comprehensive contraceptive services to support your family goals.",
+    image: familyPlanning,
     featured: false,
   },
 ];

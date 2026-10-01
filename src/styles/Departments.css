@@ -1,83 +1,87 @@
 /* Mobile-First Layout */
 .departments-page {
-  background-color: #EBEBEB; 
+  background-color: var(--bg-light-gray);
   padding: 32px 24px;
 }
 
 .departments-header {
   margin-bottom: 32px;
-  max-width: 800px;
+  max-width: 1100px;
 }
 
 .departments-title {
-  color: #0A58A3; 
-  font-size: 24px;
-  font-weight: bold;
-  margin-top: 0;
+  color: var(--all-greens);
+  font-size: var(--hero-heading);
+  font-weight: var(--semi-bold);
   margin-bottom: 16px;
 }
 
 .departments-intro {
-  color: #0A58A3;
-  font-size: 15px;
+  color: var(--text-blue);
+  font-size: var(--text-base);
   line-height: 1.5;
-  margin-top: 0;
   margin-bottom: 12px;
 }
 
 .departments-grid {
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   gap: 24px;
   max-width: 1200px;
   margin: 0 auto;
 }
 
 .dept-card {
-  background-color: #F8F8F8; 
-  border: 1px solid rgba(0, 0, 0, 0.05); 
+  border: 1px solid rgba(0, 0, 0, 0.05);
   border-radius: 12px;
   padding: 24px;
   text-align: center;
+  background-color: hsl(260 25% 95% / 30%);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: var(--card-shadow);
 }
 
 .dept-img {
   width: 100%;
-  height: 250px; 
-  object-fit: cover; 
+  height: 300px;
+  object-fit: cover;
   object-position: top;
   border-radius: var(--radius-md);
   margin-bottom: 16px;
 }
 
 .dept-card-title {
-  color: #0A58A3;
-  font-size: 18px;
+  color: var(--all-greens);
+  font-size: var(--hero-text);
   font-weight: bold;
-  margin-top: 0;
   margin-bottom: 12px;
 }
 
 .dept-card-desc {
-  color: #0A58A3;
-  font-size: 14px;
+  color: var(--text-blue);
+  font-size: var(--text-base);
   line-height: 1.5;
-  margin: 0;
 }
 
 @media (min-width: 768px) {
   .departments-page {
     padding: 64px 48px;
   }
-  
+  .departments-title {
+    font-size: 64px;
+  }
+  .departments-intro {
+    font-size: var(--hero-text);
+  }
   .departments-header {
-    margin: 0 auto 48px auto;
-    text-align: center;
+    margin-bottom: 48px;
+    text-align: left;
   }
 
   .departments-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 32px;
   }
 }
