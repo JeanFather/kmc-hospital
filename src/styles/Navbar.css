@@ -21,7 +21,7 @@
 .brand-text {
   color: #ffffff;
   font-weight: var(--semi-bold);
-  font-size: var(--hero-text);
+  font-size: var(--text-base);
   line-height: 1.5;
   letter-spacing: 0.5px;
 }

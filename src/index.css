@@ -15,14 +15,14 @@ body {
 }
 
 :root {
-  --dark-blue: #306064;
-  --all-greens: #cb4d55;
+  --dark-blue: #008ead;
+  --all-greens: #832a4a;
 
-  --picture-tint: #008eadb6;
+  --picture-tint: #306064b6;
   --bg-light-gray: #d5d5d5;
   --bg-chip-gray: #717171;
 
-  --text-blue: #284e4b;
+  --text-blue: #156744;
   --text-xs: 13px;
   --text-sm: 14px;
   --faq-font: 15px;
