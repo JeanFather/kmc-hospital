@@ -42,7 +42,6 @@ export default function Contact() {
 
   return (
     <>
-      {" "}
       <div className="contact-page">
         <div className="contact-header">
           <h1 className="page-title">Contact & Patient Guide</h1>
