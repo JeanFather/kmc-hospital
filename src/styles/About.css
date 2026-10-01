@@ -106,28 +106,28 @@
 .stat-1 {
   background:
     linear-gradient(var(--about-tint), var(--about-tint)),
-    url("../assets/site-images/kmc-records.jpg");
+    url("../assets/site-images/kmc-entrance.jpg");
 }
 .stat-2 {
   background:
     linear-gradient(var(--about-tint), var(--about-tint)),
-    url("../assets/site-images/kmc-records.jpg");
+    url("../assets/site-images/kmc-sign.jpg");
 }
 .stat-3 {
   background:
     linear-gradient(var(--about-tint), var(--about-tint)),
-    url("../assets/site-images/kmc-records.jpg");
+    url("../assets/site-images/kmc-beds.jpg");
 }
 .stat-4 {
   background:
     linear-gradient(var(--about-tint), var(--about-tint)),
-    url("../assets/site-images/kmc-records.jpg");
+    url("../assets/site-images/kmc-waitarea.jpg");
 }
 
 .fac-1 {
   background:
     linear-gradient(var(--about-tint), var(--about-tint)),
-    url("../assets/site-images/kmc-records.jpg");
+    url("../assets/site-images/kmc-consultation.jpg");
 }
 .fac-2 {
   background:
@@ -142,7 +142,7 @@
 .fac-4 {
   background:
     linear-gradient(var(--about-tint), var(--about-tint)),
-    url("../assets/site-images/postnatal-ward.jpg");
+    url("../assets/site-images/breastfeeding.jpg");
 }
 
 .light-card.fac-1,
