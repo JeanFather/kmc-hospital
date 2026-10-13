@@ -38,9 +38,9 @@ export const departmentData = [
   },
   {
     id: 4,
-    title: "Urology",
+    title: "Male Ward",
     description:
-      "Specialized diagnostics and treatment for conditions affecting the urinary tract and male reproductive system.",
+      "Dedicated inpatient admission and medical care tailored specifically for male patients, ensuring comfortable and secure recovery.",
     image: maleWard,
     featured: true,
   },
